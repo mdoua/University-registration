@@ -2,17 +2,22 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.University-registration FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="University-registration/Program.cs">
+  <MonoDevelop.Ide.ItemProperties.University-registration PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="University-registration/Logic/MemberLogic.cs">
     <Files>
-      <File FileName="University-registration/Program.cs" Line="1" Column="1" />
+      <File FileName="University-registration/Program.cs" Line="49" Column="86" />
+      <File FileName="University-registration/Logic/IMemberLogic.cs" Line="41" Column="11" />
+      <File FileName="University-registration/Logic/ListExtensions.cs" Line="16" Column="36" />
+      <File FileName="University-registration/Logic/MemberLogic.cs" Line="114" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="UniversityRegistration" expanded="True">
             <Node name="University-registration">
-              <Node name="Program.cs" selected="True" />
+              <Node name="Logic" expanded="True">
+                <Node name="MemberLogic.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
