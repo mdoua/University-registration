@@ -7,6 +7,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections;
 
 namespace UniversityRegistration
 {
@@ -62,7 +63,7 @@ namespace UniversityRegistration
                 }
                 else
                 {
-                    throw new ValidationException("Sorry, one entry isn't valid for student");
+                    throw new ValidationException("Sorry, one or more entry isn't valid");
                 }
                 
             }
@@ -108,6 +109,7 @@ namespace UniversityRegistration
 
         public int GetTotalCoursesOfMember(string email)
         {
+            // to do
             return 0;
         }
     }

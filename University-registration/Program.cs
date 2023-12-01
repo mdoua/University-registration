@@ -5,6 +5,7 @@ using UniversityRegistration.Logic;
 using UniversityRegistration.Models;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using System.Text.RegularExpressions;
 
 var services = CreateServiceCollection();
 
@@ -43,7 +44,11 @@ while (userInput.ToLower() != "exit")
     {
         Console.Write("Enter the email of the member : ");
         var memberEmail = Console.ReadLine();
-        Console.WriteLine($"The total price of inventory on hand is {memberLogic.GetTotalCoursesOfMember(memberEmail)}");
+        if (IsValid(memberEmail))
+        {
+            Console.WriteLine($"The total price of inventory on hand is {memberLogic.GetTotalCoursesOfMember(memberEmail)}");
+        }
+
         Console.WriteLine();
     }
 
@@ -59,6 +64,14 @@ static string DisplayMenuAndGetInput()
     Console.WriteLine("Type 'exit' to quit");
 
     return Console.ReadLine();
+}
+
+// To use a regex to validate email format
+static bool IsValid(string email)
+{
+    string regex = @"^[^@\s]+@[^@\s]+\.(com|net|org|gov)$";
+
+    return Regex.IsMatch(email, regex, RegexOptions.IgnoreCase);
 }
 
 static IServiceProvider CreateServiceCollection()

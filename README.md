@@ -29,4 +29,5 @@ Features :
 Liskov Substitution Principle states: This means that every subclass or derived class should be substitutable for their base or parent class.
   class Student and Teacher each of them is substituable by the parent class Member.
 
-4- Make a generic class and use it.
+4- Make a generic class and use it. 
+  The ListExtensions in Logic with the generic method Active member.

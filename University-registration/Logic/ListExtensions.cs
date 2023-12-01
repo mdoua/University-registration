@@ -13,5 +13,9 @@ namespace UniversityRegistration.Logic
         {
             return list.Where(x => x.Courses.Count>0).ToList();
         }
+        public static int listCours<T>(this List<T> list) where T : Member
+        {
+            return list.Where(x => x.Courses.Count > 0).ToList().Count;
+        }
     }
 }

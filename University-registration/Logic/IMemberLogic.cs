@@ -38,6 +38,6 @@ namespace UniversityRegistration.Logic
         /// </summary>
         /// <param name="email">The email registred for the member. </param>
         /// <returns>number of courses</returns>
-        public int GetTotalCoursesOfMember(string email);
+        //public int GetTotalCoursesOfMember(string email);
     }
 }
